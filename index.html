@@ -1,24 +1,73 @@
-<!doctype html>
-<html lang="fr">
+<!DOCTYPE html>
+<html>
 	<head>
 		<title>Site en Maintenance</title>
-	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+	</head>
 	<style>
-		.container { background-image: url("https://wallpaperaccess.com/full/34606.jpg"); height: 100%; background-position: center; background-repeat: no-repeat; background-size: cover; }
+		body, html {
+			height: 100%;
+			margin: 0;
+			font: 20px Helvetica, sans-serif; 
+			color: #333;
+		}
+
+		.bgimg-1, .bgimg-2, .bgimg-3 {
+			position: relative;
+			opacity: 1;
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: cover;
+		}
+		
+		.bgimg-1 {
+			background-image: url("https://wallpaperaccess.com/full/34606.jpg");
+			height: 100%;
+		}
+
+		.caption {
+			position: absolute;
+			left: 0;
+			top: 35%;
+			width: 100%;
+			text-align: center;
+			color: #000;
+		}
+
+		.caption span.border {
+			background-color: rgba(241, 241, 241, 0);
+			color: #333;
+			padding: 16px;
+			font-size: 30px;
+		}
+
+		h1 { 
+			font-size: 50px;
+		}
+
+		h3 {
+			letter-spacing: 5px;
+			text-transform: uppercase;
+			font: 20px Helvetica, sans-serif; 
+			color: #333; 
+		}
 	</style>
 	<body>
-		<div class="container">
-			<article>
-				<h1>Nous reviendrons bientôt !</h1>
-				
-				<p>Désolé pour le désagrément, mais nous effectuons actuellement des travaux de maintenance. Si vous en avez besoin, vous pouvez toujours nous contacter, sinon nous serons de retour en ligne sous peu ! </p>
-				<p>&mdash; Les Vexés</p>
+		<div class="bgimg-1">
+			<div class="caption">
+				<span class="border"><h1>Nous reviendrons bientôt !</h1></span>
+				<span class="border">Désolé pour le désagrément, mais nous effectuons actuellement des travaux de maintenance.</span>
+				<br>
+				<span class="border">Si vous en avez besoin, vous pouvez toujours nous contacter, sinon nous serons de retour en ligne sous peu !</span>
+				<br>
+				<br>
+				<span class="border">&mdash; Les Vexés</span>
 				<br>
 				<ul>
-					<li><a style="color: #ff7d00;" href="/bungie.html" class="nav">Notre Clan</a></li>
-					<li><a style="color: #ff7d00;" href="/discord.html" class="nav">Notre Discord</a></li>
+					<li><a style="color: #0f00ff;" href="/bungie.html" class="nav">Notre Clan</a></li>
+					<li><a style="color: #0f00ff;" href="/discord.html" class="nav">Notre Discord</a></li>
 				</ul>
-			<article>
+			</div>
 		</div>
 	</body>
 </html>
