@@ -1,1 +1,45 @@
-
+.content {
+  transform:skew(-27deg);
+  font-family: 'Lato';
+  width:320px; /* Changes hidden right position if you change this width */
+  float:left;
+  margin:20px;
+}
+.btn {
+    display:block;
+    position: relative; 
+    background: #fff none repeat scroll 0 0;
+    border: 1px solid #999;
+    max-width: 100%;
+    overflow:hidden; /* Delete this line to see the sliding divs hidden */
+    padding: 25px 204px 25px 30px;
+    cursor:pointer;
+}
+.btn span {
+    transform:skew(27deg);
+    color: #ed1c29;
+    display: block;
+    position: relative;
+    text-align: left;
+    z-index: 2;
+}
+.btn:hover span {
+  color:#fff;
+}
+.btn::after {
+    content: "";
+    position:absolute;
+    transition: all ease 0.3s;
+    background: #eee;
+    height: 800%;
+    margin: -5px 0 0 -5px;
+    right: -1670px;
+    top: 0px;
+    transform: rotate(120deg);
+    transform-origin: 0 0 0;
+    width: 280%;
+}
+.btn:hover::after {
+    background: #ed1c29;
+    right: -1200px;
+}
